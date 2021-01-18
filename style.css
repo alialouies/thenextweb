@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+img {
+    width: 280px;
+    height: 220px;
+}
+
+/* Info navigation */
+
+#info-nav {
+    height: 32px;
+    background-color: black;
+    line-height: 32px;
+    
+}
+
+#info-list {
+    display: flex;
+}
+
+#info-list a {
+    color: hsla(0,0%,100%,.6);
+    padding-left: 10px;
+}
+
+li #news {
+    color: white;
+}
+
+#right-menu {
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+
+/* Website Navigation */
+
+#web-nav {
+    background-color: #fff;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+
+}
+
+#web-nav-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#web-nav-list > li > a {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.loop {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-left: 0.1em solid #eee;
+}
+
+
+/* FEED */
+
+#feed {
+    display: flex;
+    margin: 10px;
+    margin-right: 15px;
+}
+
+#feed p, #feed time, .author {
+     color:hsla(0,0%,100%,.6);
+}
+
+#left-feed ,.top, .bottom {
+    margin: 5px;
+    display: grid;
+    align-items: end;
+    grid-template-rows: 1fr auto;
+}
+
+#left-feed::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f44, black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: -1;
+
+}
+
+#left-feed {
+    background-image: url(imgs/coding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 505px;
+    z-index: 1;
+}
+
+.top {
+    background-image: url(imgs/whatsapp.png);
+
+}
+
+.top, .bottom {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+}
+
+.bottom {
+    background-image: url(imgs/iphone.jpeg);
+}
+
+.right-feed::after {
+    content: "";
+    background: black;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+
+.right-feed {
+    position: relative;
+}
+
+#feed h2 {
+    color: white;
+    font-size: 30px;
+}
+
+#feed h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* Main Section */
+
+#main-section { 
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+h2 > a, h2 {
+    color: #f42;
+    font-size: 28px;
+
+}
+
+
+/* Latest News */ 
+
+
+#latest-news-section {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#latest-news-section > div {
+    margin-right: 10px;
+}
+
+#latest-news-section img {
+    width: 260px;
+    height: 180px;
+}
+
+#latest-news-section h3 {
+    max-width: 260px;
+}
+
+time, .news-author {
+    color: #AAAAAA;
+    font-size: 12px;
+}
+
+
+/* Funding Rounds */
+
+#rounds {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.funding-round {
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgba(255,68,34,.03);
+    color: #555555;
+    width: 260px;
+}
+
+.funding-round h3 {
+    background-color: #f42;
+    color: white;
+    padding: 10px 20px;
+    padding-left: 70px;
+}
+
+.funding-round  h4 {
+    background-color: rgba(255,68,34,.08);
+    color: black;
+    padding: 20px 20px;
+    padding-left: 70px;
+}
+
+.text {
+    padding: 7px;
+    border-top: 1px solid rgba(255,68,34,.25);
+    font-size: 12px;
+}
+
+.funding-round p {
+    padding: 7px;
+}
+
+.funding-round span {
+    color: #AAAAAA;
+}
+
+.head-round img{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   margin: 10px;
+}
+/* Topics */
+
+#topics {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.topic {
+    width: 340px;
+    margin: 10px;
+}
+
+.headline-one {
+    background-image: url(imgs/trump.jpg);
+}
+.headline-two {
+    background-image: url(imgs/tesla.jpeg);
+}
+.headline-three {
+    background-image: url(imgs/iphone.jpeg);
+}
+.img-headlines {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    display: grid;
+    align-items: end;
+    grid-template-rows: 1fr auto;
+    color: white;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-headlines::after {
+    content: "";
+    background: linear-gradient(black, black);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: -1;
+    
+
+}
+
+.sub-img {
+    width: 100px;
+    height: 80px;
+}
+
+
+.latest-in-news {
+    color: #f42;
+    background-color: #fff4f3;
+    display: flex;
+
+}
+
+.topic ul {
+    list-style: none;
+    color: #555555;
+}
+
+#topics > .topic > ul > li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+#topics li {
+    font-size: 13px;
+    border-bottom: 0.1em solid #eee;
+    padding: 5px;
+}
+
+
+/* Latest Deals */
+
+#latest-deals-section {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deal {
+   padding-right: 10px;
+   padding-top: 5px;
+   width: 260px;
+}
+
+.deal img {
+    width: 100%;
+}
+
+#latest-deals-section h3 {
+    max-width: 280px;
+}
+
+#latest-deals-section a {
+    font-weight: 600;
+}
+
+
+.old-price {
+    text-decoration: line-through;
+    color: #AAAAAA;
+    font-size: 12px;
+}
+
+/* Footer */
+
+
+#contact-social {
+    background-color: #131313;
+}
+
+#tnw-contact {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px 20px;
+}
+
+#tnw-contact a {
+    color: #AAAAAA;
+    font-size: 13px;
+    padding: 0 10px 0;
+}
+
+
+#legal {
+    padding: 35px 0 35px;
+    background-color: #000000;
+    color: #AAAAAA;
+    text-align: center;
+}
+
+
+#legal a, #tnw-logo {
+    color: white;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+/* Social */
+
+#social-list {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    margin: 2px;
+    padding: 10px;  
+    font-size: 20px;  
+    width: 40px;  
+    text-align: center;  
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+}
+
+@media (max-width: 760px) {
+    html,body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #feed {
+       display: block;
+    }
+
+    #left-feed h1 {
+        font-size: 30px;
+    }
+
+    #left-feed {
+        height: 250px;
+    }
+    
+    #info-nav, #web-nav-list > li > a {
+        display: none;
+    }
+
+
+    #latest-news-section > div {
+        display: flex;
+        margin: 10px;
+    }
+    #latest-news-section img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .funding-round, .topic {
+        width: 100%;
+    }
+
+    .deal {
+        display: flex;
+        width: 100%;
+    }
+
+    .deal img {
+        width: 100px;
+        height: 80px;
+    }
+
+}
